@@ -6,7 +6,7 @@
 /*   By: helde-so <helde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 13:28:44 by helde-so          #+#    #+#             */
-/*   Updated: 2024/10/17 10:52:21 by helde-so         ###   ########.fr       */
+/*   Updated: 2024/10/17 16:12:09 by helde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,6 @@ int		ft_isascii(int c);
 int		ft_isprint(int c);
 size_t	ft_strlen(const char *s);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
+size_t  ft_strlcat(char *dst, const char *src, size_t size);
 
 #endif
