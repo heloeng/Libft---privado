@@ -6,12 +6,12 @@
 /*   By: helde-so <helde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 16:28:38 by helde-so          #+#    #+#             */
-/*   Updated: 2024/10/17 10:38:23 by helde-so         ###   ########.fr       */
+/*   Updated: 2024/10/18 14:19:40 by helde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//Copia uma string para um buffer limitando o número de caracteres copiados
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	size_t	i;

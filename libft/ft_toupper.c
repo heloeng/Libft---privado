@@ -1,50 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: helde-so <helde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/16 11:25:21 by helde-so          #+#    #+#             */
-/*   Updated: 2024/10/18 14:19:01 by helde-so         ###   ########.fr       */
+/*   Created: 2024/10/18 11:32:36 by helde-so          #+#    #+#             */
+/*   Updated: 2024/10/18 14:17:44 by helde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//Calcula o tamanho de uma string (o número de caracteres até o caractere nulo '\0'
-size_t	ft_strlen(const char *s)
+//transforma letra minuscula para maiuscula
+int	ft_toupper(int c)
 {
-	size_t	i;
-
-	i = 0;
-	while (*s != '\0')
+	if (c >= 'a' && c <= 'z')
 	{
-		s++;
-		i++;
+		return (c - 32);
 	}
-	return (i);
+	return (c);
 }
 /*
-#include<stdio.h>
+#include <stdio.h>
 int main(void)
 {
-    char *s;
+    char c;
     char result;
-    
-    s = "heloia";
-    result = ft_strlen(s);
+    c = 'a';
+    result = ft_toupper(c);
     printf("%d/n", result);
-}
-
-*/
-
-/*
-size_t ft_strlen(const char *s)
-{
-
-	i = 0;
-	while (s[i])
-		i++;
-	return (i);
+    return (0);
 }
 */

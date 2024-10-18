@@ -6,12 +6,12 @@
 /*   By: helde-so <helde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 09:55:10 by helde-so          #+#    #+#             */
-/*   Updated: 2024/10/16 14:15:35 by helde-so         ###   ########.fr       */
+/*   Updated: 2024/10/18 14:21:45 by helde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+// Verifica se um caractere é uma letra (a-z ou A-Z) 
 int	ft_isalnum(int c)
 {
 	return (ft_isalpha(c) || ft_isdigit(c));

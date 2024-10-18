@@ -6,12 +6,12 @@
 /*   By: helde-so <helde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 13:33:20 by helde-so          #+#    #+#             */
-/*   Updated: 2024/10/16 14:02:07 by helde-so         ###   ########.fr       */
+/*   Updated: 2024/10/18 14:21:11 by helde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//Verifica se um caractere é um valor ASCII válido (0-127
 int	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)
