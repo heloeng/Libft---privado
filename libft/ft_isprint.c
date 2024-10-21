@@ -6,12 +6,12 @@
 /*   By: helde-so <helde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 10:03:38 by helde-so          #+#    #+#             */
-/*   Updated: 2024/10/18 14:20:34 by helde-so         ###   ########.fr       */
+/*   Updated: 2024/10/21 13:53:36 by helde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//Verifica se um caractere é imprimíve
+//Verifica se um caracter é imprimível
 int	ft_isprint(int c)
 {
 	if (c >= 32 && c <= 126)
