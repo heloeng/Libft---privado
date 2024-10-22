@@ -1,48 +1,45 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: helde-so <helde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/18 13:13:17 by helde-so          #+#    #+#             */
-/*   Updated: 2024/10/22 17:14:50 by helde-so         ###   ########.fr       */
+/*   Created: 2024/10/21 10:54:58 by helde-so          #+#    #+#             */
+/*   Updated: 2024/10/22 10:03:31 by helde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+//Procura a última ocorrência de um caracter em uma string.
+#include "libft.h"
 
-//Procura a primeira ocorrência de um caracter em uma string.
-
-char *ft_strchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
+	unsigned char	ch = (unsigned char)c;
+	const char	*last_c;
 
-unsigned char ch = (unsigned char)c;
-
-    while (*s != '\0')
-    {
-        if (*s == ch)
-        {
-            return ((char *)s);
-        }
-         s++;
-    }
-   
-
-    if (ch == '\0')
-    {
-        return ((char *)s);
-    }
-    return (0);
-
+	last_c =    NULL;
+	while (*s != '\0')
+	{
+		if (*s == ch)
+		{
+			last_c = s;
+		}
+		s++;
+	}
+	if (ch == '\0')
+	{
+		return ((char *)s);
+	}
+	return ((char *)last_c);
 }
 /*
     int main(void)
     {
 
-        const char result[10] = "heloiza";
+        const char result[10] = "heloizaa";
 
-        printf("%s\n", ft_strchr(result, 'i'));
+        printf("%s\n", ft_strrchr(result, 'a'));
         return (0);
     }
-
 */

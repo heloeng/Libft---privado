@@ -6,12 +6,12 @@
 /*   By: helde-so <helde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 17:43:15 by helde-so          #+#    #+#             */
-/*   Updated: 2024/10/18 14:20:48 by helde-so         ###   ########.fr       */
+/*   Updated: 2024/10/21 13:53:31 by helde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//Verifica se um caractere é um dígito numérico (0-9).
+//Verifica se um caracter é um dígito numérico (0-9).
 int	ft_isdigit(int c)
 {
 	if (c >= '0' && c <= '9')

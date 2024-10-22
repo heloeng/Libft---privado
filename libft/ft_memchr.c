@@ -1,34 +1,44 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: helde-so <helde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/16 10:03:38 by helde-so          #+#    #+#             */
-/*   Updated: 2024/10/21 13:53:36 by helde-so         ###   ########.fr       */
+/*   Created: 2024/10/22 15:45:49 by helde-so          #+#    #+#             */
+/*   Updated: 2024/10/22 18:09:42 by helde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//Verifica se um caracter é imprimível
-int	ft_isprint(int c)
+
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-	if (c >= 32 && c <= 126)
+	unsigned char	*ptr;
+	unsigned char	ch;
+	size_t			i;
+
+	ch = (unsigned char)c;
+	ptr = (unsigned char *)s;
+	i = 0;
+	while (i < n)
 	{
-		return (1);
+		if (ch == ptr[i])
+		{
+			return (ptr + i);
+		}
+		i++;
 	}
-	return (0);
+	return (NULL);
 }
 /*
-#include<stdio.h>
 int main(void)
 {
-    char c;
-    int result;
 
-    c = '&';
-    result = ft_isprint(c);
-    printf("%d/n", result);
+	const char result[10] = "heloiza";
+	char *ptr = (char *)ft_memchr(result, 'e', 2);
+	printf("%s\n", ptr);
+
+	return (0);
 }
 */
