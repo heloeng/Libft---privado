@@ -1,45 +1,44 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: helde-so <helde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/21 10:54:58 by helde-so          #+#    #+#             */
-/*   Updated: 2024/10/22 10:03:31 by helde-so         ###   ########.fr       */
+/*   Created: 2024/10/22 15:45:49 by helde-so          #+#    #+#             */
+/*   Updated: 2024/10/22 18:09:42 by helde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//Procura a última ocorrência de um caracter em uma string.
 #include "libft.h"
 
-char	*ft_strrchr(const char *s, int c)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-	unsigned char	ch = (unsigned char)c;
-	const char	*last_c;
+	unsigned char	*ptr;
+	unsigned char	ch;
+	size_t			i;
 
-	last_c =    NULL;
-	while (*s != '\0')
+	ch = (unsigned char)c;
+	ptr = (unsigned char *)s;
+	i = 0;
+	while (i < n)
 	{
-		if (*s == ch)
+		if (ch == ptr[i])
 		{
-			last_c = s;
+			return (ptr + i);
 		}
-		s++;
+		i++;
 	}
-	if (ch == '\0')
-	{
-		return ((char *)s);
-	}
-	return ((char *)last_c);
+	return (NULL);
 }
 /*
-    int main(void)
-    {
+int main(void)
+{
 
-        const char result[10] = "heloizaa";
+	const char result[10] = "heloiza";
+	char *ptr = (char *)ft_memchr(result, 'e', 2);
+	printf("%s\n", ptr);
 
-        printf("%s\n", ft_strrchr(result, 'a'));
-        return (0);
-    }
+	return (0);
+}
 */

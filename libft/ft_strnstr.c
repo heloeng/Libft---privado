@@ -6,7 +6,7 @@
 /*   By: helde-so <helde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 13:46:01 by helde-so          #+#    #+#             */
-/*   Updated: 2024/10/21 16:47:38 by helde-so         ###   ########.fr       */
+/*   Updated: 2024/10/22 10:09:06 by helde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,27 +14,26 @@
 //big - onde procurar /
 //little: substring a procurar / 
 //size - limite máximo de caracteres para percorrer
+// little_len; variável que irá receber o tamanho da string
+
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
 	size_t	i;
-	size_t	little_len; // variável que irá receber o tamanho da string
+	size_t	little_len;
 
 	if (*little == '\0')
-		return ((char*)big);
-		 
-		 i = 0;
-		 little_len = ft_strlen(little);
-		 while(i + little_len <= len && big[i])
-		 {
-			if(ft_strncmp(&big[i], little, little_len) == 0)
+		return ((char *)big);
+	i = 0;
+	little_len = ft_strlen(little);
+	while (i + little_len <= len && big[i])
+	{
+		if (ft_strncmp(&big[i], little, little_len) == 0)
 			return ((char *)&big[i]);
-			i++;
-		 }
-		 
-	return (NULL);
+		i++;
 	}
-	
-	/*
+	return (NULL);
+}
+/*
 	int main(void)
 {
     const char *texto = "Este é um teste de string";

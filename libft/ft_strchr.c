@@ -6,14 +6,13 @@
 /*   By: helde-so <helde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 13:13:17 by helde-so          #+#    #+#             */
-/*   Updated: 2024/10/21 13:55:48 by helde-so         ###   ########.fr       */
+/*   Updated: 2024/10/22 17:14:50 by helde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
 
 //Procura a primeira ocorrência de um caracter em uma string.
+
 char *ft_strchr(const char *s, int c)
 {
 
