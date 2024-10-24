@@ -6,7 +6,7 @@
 /*   By: helde-so <helde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 15:45:49 by helde-so          #+#    #+#             */
-/*   Updated: 2024/10/22 18:09:42 by helde-so         ###   ########.fr       */
+/*   Updated: 2024/10/24 09:03:15 by helde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
-
+/*
 int main(void)
 {
 
@@ -41,4 +41,4 @@ int main(void)
 
 	return (0);
 }
-
+*/
