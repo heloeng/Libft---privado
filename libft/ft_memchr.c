@@ -31,7 +31,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
-/*
+
 int main(void)
 {
 
@@ -41,4 +41,4 @@ int main(void)
 
 	return (0);
 }
-*/
+
