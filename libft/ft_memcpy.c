@@ -6,7 +6,7 @@
 /*   By: helde-so <helde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 09:08:53 by helde-so          #+#    #+#             */
-/*   Updated: 2024/10/24 09:32:16 by helde-so         ###   ########.fr       */
+/*   Updated: 2024/10/28 13:56:13 by helde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,8 +42,10 @@ void *ft_memcpy(void *dest, const void *src, size_t n)
         ((unsigned char *)dest)[i] = ((unsigned char *)src)[i];
         i++;
     }
-    return (dest);
+    //return (dest);
+   
 }
+
 */
 
 /*
@@ -51,7 +53,8 @@ int main(void)
 {
 
     char src[10] = "heloiza";
-    char dest[10];
+    char dest[1];
     ft_memcpy(dest, src, 3);
     printf(" resultado: %s/n", dest);
-}*/
+}
+*/

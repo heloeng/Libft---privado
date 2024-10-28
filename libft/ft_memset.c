@@ -6,7 +6,7 @@
 /*   By: helde-so <helde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 11:15:50 by helde-so          #+#    #+#             */
-/*   Updated: 2024/10/22 16:52:37 by helde-so         ###   ########.fr       */
+/*   Updated: 2024/10/25 18:14:44 by helde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,11 +30,11 @@ void	*ft_memset(void *s, int c, size_t n)
 {
 	unsigned char	ch;
 	unsigned char	*ptr;
-	size_t i;
+	size_t			i;
 
 	ch = (unsigned char)c;
 	ptr = (unsigned char *)s;
-	i  = 0;
+	i = 0;
 	while (i < n)
 	{
 		ptr[i] = ch;
