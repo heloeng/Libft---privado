@@ -6,14 +6,14 @@
 /*   By: helde-so <helde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 13:46:01 by helde-so          #+#    #+#             */
-/*   Updated: 2024/10/22 10:09:06 by helde-so         ###   ########.fr       */
+/*   Updated: 2024/10/28 14:57:37 by helde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 //big - onde procurar /
 //little: substring a procurar / 
-//size - limite máximo de caracteres para percorrer
+//size - limite máximo de caracteres  em big para percorrer / onde irá procurar little.
 // little_len; variável que irá receber o tamanho da string
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
