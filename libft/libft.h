@@ -6,7 +6,7 @@
 /*   By: helde-so <helde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 13:28:44 by helde-so          #+#    #+#             */
-/*   Updated: 2024/10/28 15:50:21 by helde-so         ###   ########.fr       */
+/*   Updated: 2024/10/29 11:16:01 by helde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,5 +44,6 @@ void    *ft_calloc(size_t nmemb, size_t size);
 char	*ft_strdup(const char *s);
 void    ft_putchar_fd(char c, int fd);
 void    ft_putstr_fd(char *s, int fd);
+void    ft_putnbr_fd(int n, int fd);
 
 #endif
