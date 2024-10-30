@@ -6,7 +6,7 @@
 /*   By: helde-so <helde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 09:44:21 by helde-so          #+#    #+#             */
-/*   Updated: 2024/10/29 11:56:00 by helde-so         ###   ########.fr       */
+/*   Updated: 2024/10/30 10:37:26 by helde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ void ft_putnbr_fd(int n, int fd)
 	{
 		write(fd, "-", 1);
 		n = -n; // transforma em positivo para extração do digito  (n % 10), já que o módulo e a divisão por 10 funcionam naturalmente com números positivos.
+	    ft_putnbr_fd(n, fd);
 	}
 	else
 	{

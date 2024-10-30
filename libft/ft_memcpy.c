@@ -6,7 +6,7 @@
 /*   By: helde-so <helde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 09:08:53 by helde-so          #+#    #+#             */
-/*   Updated: 2024/10/28 13:56:13 by helde-so         ###   ########.fr       */
+/*   Updated: 2024/10/30 10:42:06 by helde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,11 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 
 	d = (unsigned char *)dest;
 	s = (unsigned char *)src;
+
+    if (d == (void *) 0 && src == (void *) 0)
+    return (dest);
+
+    
 	while (n > 0)
 	{
 		*d++ = *s++;
