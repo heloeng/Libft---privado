@@ -6,7 +6,7 @@
 /*   By: helde-so <helde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 18:57:02 by helde-so          #+#    #+#             */
-/*   Updated: 2024/10/31 20:30:22 by helde-so         ###   ########.fr       */
+/*   Updated: 2024/11/01 12:00:54 by helde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,13 +29,15 @@ void ft_striteri(char *s, void (*f)(unsigned int, char*))
 	}
 	
 }
+
 /*
-void toggle_case(unsigned int index, char *c) {
-    if (index % 2 == 0) {
-        *c = toupper(*c); // Converte para maiúscula se o índice for par
-    } else {
-        *c = tolower(*c); // Converte para minúscula se o índice for ímpar
-    }
+int	ft_isalpha(int c)
+{
+	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
+	{
+		return (1);
+	}
+	return (0);
 }
 
 int main() {
@@ -43,10 +45,11 @@ int main() {
     
     printf("Original: %s\n", str);
     
-    ft_striteri(str, toggle_case);
+    ft_striteri(str, ft_isalpha);
     
     printf("Modificado: %s\n", str); 
     
     return 0;
 }
+
 */
