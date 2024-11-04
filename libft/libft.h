@@ -6,7 +6,7 @@
 /*   By: helde-so <helde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 13:28:44 by helde-so          #+#    #+#             */
-/*   Updated: 2024/11/01 13:29:15 by helde-so         ###   ########.fr       */
+/*   Updated: 2024/11/04 15:23:41 by helde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,7 @@ void    ft_putendl_fd(char *s, int fd);
 char   *ft_substr(char const *s, unsigned int start, size_t len);
 char   *ft_strjoin(char const *s1, char const *s2);
 void   ft_striteri(char *s, void (*f)(unsigned int, char*));
-char *ft_strmapi(char const *s, char (*f)(unsigned int, char));
+char    *ft_strmapi(char const *s, char (*f)(unsigned int, char));
+char    *ft_itoa(int n);
 
 #endif

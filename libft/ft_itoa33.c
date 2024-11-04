@@ -1,16 +1,5 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_itoa.c                                          :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: helde-so <helde-so@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/02 10:43:47 by helde-so          #+#    #+#             */
-/*   Updated: 2024/11/04 17:24:32 by helde-so         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "libft.h"
+#include <stdlib.h>
 
 static int ft_num_len(int n)
 {
@@ -44,16 +33,12 @@ char *ft_itoa(int n)
 	int len;
 	char *str;
 	unsigned int num;
+
 	len = ft_num_len(n);
 	str = (char *)malloc((len + 1) * sizeof(char));
 	if (!str)
 		return (NULL);
-	str[len] = '\0';
-	if (n == 0)
-    {
-        str[0] = '0';
-        return str;
-    }
+
 	if (n < 0)
 	{
 		str[0] = '-';
@@ -66,10 +51,12 @@ char *ft_itoa(int n)
 		str[--len] = (num % 10) + '0';
 		num /= 10;
 	}
+	if (n == 0)
+		str[0] = '0';
 	return str;
 }
-/*
 
+/*
 #include <stdio.h>
 #include <stdlib.h>
 
