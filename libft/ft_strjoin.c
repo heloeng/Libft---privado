@@ -6,7 +6,7 @@
 /*   By: helde-so <helde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 14:33:57 by helde-so          #+#    #+#             */
-/*   Updated: 2024/11/07 14:25:47 by helde-so         ###   ########.fr       */
+/*   Updated: 2024/11/07 19:36:28 by helde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	char	*new_str;
 	size_t	str_len_1;
 	size_t	str_len_2;
-	char	total_str1_str2;
+	size_t	total_str1_str2;
 
 	if (!s1 || !s2)
 	{
