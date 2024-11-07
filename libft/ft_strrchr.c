@@ -6,19 +6,19 @@
 /*   By: helde-so <helde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 10:54:58 by helde-so          #+#    #+#             */
-/*   Updated: 2024/10/25 18:27:32 by helde-so         ###   ########.fr       */
+/*   Updated: 2024/11/07 17:35:02 by helde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//Procura a última ocorrência de um caracter em uma string.
 #include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {
-	unsigned char			ch = (unsigned char)c;
-	const char	*last_c;
+	unsigned char	ch;
+	const char		*last_c;
 
-	last_c =    NULL;
+	ch = (unsigned char)c;
+	last_c = NULL;
 	while (*s != '\0')
 	{
 		if (*s == ch)
@@ -33,13 +33,3 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return ((char *)last_c);
 }
-/*
-    int main(void)
-    {
-
-        const char result[10] = "heloizaa";
-
-        printf("%s\n", ft_strrchr(result, 'a'));
-        return (0);
-    }
-*/

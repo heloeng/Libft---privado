@@ -6,12 +6,12 @@
 /*   By: helde-so <helde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 13:39:09 by helde-so          #+#    #+#             */
-/*   Updated: 2024/10/21 13:53:23 by helde-so         ###   ########.fr       */
+/*   Updated: 2024/11/07 16:45:25 by helde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-// Verifica se um caracter é uma letra do alfabeto (a-z ou A-Z)
+
 int	ft_isalpha(int c)
 {
 	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
@@ -20,19 +20,3 @@ int	ft_isalpha(int c)
 	}
 	return (0);
 }
-/*
-#include <stdio.h>
-
-int main(void)
-{
-    char c;
-    int result;
-
-    c = '3';
-    result = ft_isalpha(c);
-
-    printf("%d\n", result);
-    return (0);
-}
-
-*/

@@ -5,22 +5,21 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: helde-so <helde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/02 10:43:47 by helde-so          #+#    #+#             */
-/*   Updated: 2024/11/04 17:24:32 by helde-so         ###   ########.fr       */
+/*   Created: 2024/11/07 16:55:10 by helde-so          #+#    #+#             */
+/*   Updated: 2024/11/07 17:57:48 by helde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int ft_num_len(int n)
+static int	ft_num_len(int n)
 {
-	int i = 0;
-	unsigned int num;
+	unsigned int	num;
+	int				i;
 
 	i = 0;
 	if (n == 0)
-		return 1;
-
+		return (1);
 	if (n < 0)
 	{
 		i = 1;
@@ -30,75 +29,39 @@ static int ft_num_len(int n)
 	{
 		num = n;
 	}
-
 	while (num != 0)
 	{
 		num /= 10;
 		i++;
 	}
-	return i;
+	return (i);
 }
 
-char *ft_itoa(int n)
+char	*ft_itoa(int n)
 {
-	int len;
-	char *str;
-	unsigned int num;
+	unsigned int	len;
+	unsigned int	num;
+	char			*str;
+
+	num = n;
 	len = ft_num_len(n);
-	str = (char *)malloc((len + 1) * sizeof(char));
+	str = (char *)ft_calloc((len + 1), sizeof(char));
 	if (!str)
 		return (NULL);
-	str[len] = '\0';
 	if (n == 0)
-    {
-        str[0] = '0';
-        return str;
-    }
+	{
+		str[0] = '0';
+		return (str);
+	}
 	if (n < 0)
 	{
 		str[0] = '-';
 		num = -n;
 	}
-	else
-		num = n;
 	while (num != 0)
 	{
 		str[--len] = (num % 10) + '0';
 		num /= 10;
 	}
-	return str;
+	return (str);
 }
-/*
-
-#include <stdio.h>
-#include <stdlib.h>
-
-// Protótipo da função ft_itoa
-char *ft_itoa(int n);
-
-int main(void)
-{
-	// Teste com vários números, incluindo casos extremos
-	int values[] = {0, 1, -1, 42, -42, 123456, -123456, 2147483647, -2147483648};
-	char *result;
-
-	printf("Testando ft_itoa:\n\n");
-
-	// Use size_t para garantir a compatibilidade de tipos
-	for (size_t i = 0; i < sizeof(values) / sizeof(values[0]); i++)
-	{
-		result = ft_itoa(values[i]);
-		if (result)
-		{
-			printf("ft_itoa(%d) -> \"%s\"\n", values[i], result);
-			free(result); // Liberar memória alocada
-		}
-		else
-		{
-			printf("Erro: Memória insuficiente para ft_itoa(%d)\n", values[i]);
-		}
-	}
-
-	return 0;
-}
-*/

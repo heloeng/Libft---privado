@@ -6,7 +6,7 @@
 /*   By: helde-so <helde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 09:46:45 by helde-so          #+#    #+#             */
-/*   Updated: 2024/10/25 11:46:32 by helde-so         ###   ########.fr       */
+/*   Updated: 2024/11/07 17:29:29 by helde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,20 +30,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-/*
-int main(){
-  char fonteA[12] = "Computacao";
-  char fonteB[12] = "Computador";
-  printf("Bloco de memória A: %s\n", fonteA);
-  printf("Bloco de memória B: %s\n", fonteB);
-  printf("primeira comparação: %d\n\n", memcmp(fonteA, fonteB, sizeof(fonteA)));
-
-  char fonteC[12] = "BCC";
-  char fonteD[12] = "BCC";
-  printf("String C: %s\n", fonteC);
-  printf("String D: %s\n", fonteD);
-  printf("segunda comparação: %d\n\n", memcmp(fonteC, fonteD, sizeof(fonteC)));
-  
-  return 0;
-}	
-*/

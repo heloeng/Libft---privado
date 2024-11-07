@@ -6,7 +6,7 @@
 #    By: helde-so <helde-so@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/14 11:02:09 by helde-so          #+#    #+#              #
-#    Updated: 2024/11/06 16:54:41 by helde-so         ###   ########.fr        #
+#    Updated: 2024/11/07 18:23:24 by helde-so         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@
 
 NAME = libft.a            
 CC = gcc                 
-CFLAGS = -Wall -Wextra -Werror  
+CFLAGS = -Wall -Wextra -Werror -I .
 SRC = ft_isdigit.c ft_isascii.c ft_isalpha.c ft_isalnum.c ft_isprint.c \
 ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_tolower.c \
 ft_toupper.c ft_strcmp.c ft_strchr.c  ft_strrchr.c \
@@ -39,3 +39,5 @@ fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
+
+.PHONY: all clean fclean re

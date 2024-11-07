@@ -6,7 +6,7 @@
 /*   By: helde-so <helde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 13:13:17 by helde-so          #+#    #+#             */
-/*   Updated: 2024/10/25 13:45:44 by helde-so         ###   ########.fr       */
+/*   Updated: 2024/11/07 17:26:37 by helde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,16 +31,3 @@ char	*ft_strchr(const char *s, int c)
 	}
 	return (0);
 }
-/*
- //Procura a primeira ocorrência de um caracter em uma string.
-
-    int main(void)
-    {
-
-        const char result[10] = "heloiza";
-
-        printf("%s\n", ft_strchr(result, 'i'));
-        return (0);
-    }
-
-*/

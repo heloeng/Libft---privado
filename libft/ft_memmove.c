@@ -6,7 +6,7 @@
 /*   By: helde-so <helde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 08:59:30 by helde-so          #+#    #+#             */
-/*   Updated: 2024/10/25 13:44:32 by helde-so         ###   ########.fr       */
+/*   Updated: 2024/11/07 15:19:45 by helde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 
 	d = (unsigned char *)dest;
 	s = (unsigned char *)src;
-	if(d == s || n == 0)
+	if (d == s || n == 0)
 	{
 		return (dest);
 	}
@@ -28,23 +28,13 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 		return (ft_memcpy(dest, src, n));
 	}
 	else
-	{      
-        d += n-1;
-        s += n-1;
-        while (n--)
-        {
-            *d-- = *s--;
-        }
-	return (dest);
-    }
+	{
+		d += n - 1;
+		s += n - 1;
+		while (n--)
+		{
+			*d-- = *s--;
+		}
+		return (dest);
+	}
 }
-/*
-int main(void)
-{
-
-    char src[5] = "helo";
-    char dest[6] = "AA";
-    ft_memmove(dest, src, 3);
-    printf(" resultado: %s/n", dest);
-}
-*/

@@ -6,7 +6,7 @@
 /*   By: helde-so <helde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 11:16:15 by helde-so          #+#    #+#             */
-/*   Updated: 2024/10/28 10:46:18 by helde-so         ###   ########.fr       */
+/*   Updated: 2024/11/07 14:30:30 by helde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	*ft_strdup(const char *s)
 {
-	int	len;
-	int	i;
-	char				*string_size;
+	int		len;
+	int		i;
+	char	*string_size;
 
 	len = 0;
 	while (s[len] != '\0')
